@@ -25,4 +25,4 @@ def get_job_by_build_state(url, view_name, state='FAILURE'):
     return jobs_by_state
 
 if __name__ == '__main__':
-    jobs = get_job_by_build_state(url='', view_name='VIEW_NAME', state='UNSTABLE')
+    jobs = get_job_by_build_state(url='https://cbjenkins-pg.devtools.intel.com/teams-iotgdevops01/job/iotgdevops01', view_name='All', state='FAILURE')
