@@ -4,7 +4,7 @@ from requests import ConnectionError
 
 def get_job_by_build_state(url, view_name, state='FAILURE'):
     server = Jenkins(url)
-    view_url = f'{url}/view/{view_name}/'
+    view_url = f'{url}/view/{view_name}'
     view = server.get_view_by_url(view_url)
     jobs = view.get_job_dict()
 
