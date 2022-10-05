@@ -18,7 +18,7 @@ def get_job_by_build_state(url, view_name, state='FAILURE'):
             status = build.get_status()
             if status == state:
                 jobs_by_state.append(job)
-                except BuildFailure
+                except ConnectionError
                     continue
     return jobs_by_state
 
